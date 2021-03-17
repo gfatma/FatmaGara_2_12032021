@@ -1,0 +1,169 @@
+/*téléchargement de la police*/
+@font-face {
+ font-family: "Raleway";
+ src: url("/Police/Raleway-Italic-VariableFont_wght.ttf") ,
+   url("/Police/Raleway-VariableFont_wght.ttf") ,
+   url("/Police/static/Raleway-Black.ttf") ,
+        url("/Police/Raleway-BlackItalic.ttf"),
+		 url("/Police/Raleway-Bold.ttf"),
+		  url("/Police/Raleway-BoldItalic.ttf"),
+		   url("/Police/Raleway-ExtraBold.ttf"),
+		    url("/Police/Raleway-ExtraBoldItalic.ttf"),
+			 url("/Police/Raleway-ExtraLight.ttf"),
+			  url("/Police/Raleway-ExtraLightItalic.ttf"),
+			   url("/Police/Raleway-Italic.ttf"),
+			    url("/Police/Raleway-Light.ttf"),
+				 url("/Police/Raleway-LightItalic.ttf"),
+				  url("/Police/Raleway-Medium.ttf"),
+				   url("/Police/Raleway-MediumItalic.ttf"),
+				    url("/Police/Raleway-Regular.ttf"),
+					 url("/Police/Raleway-SemiBold.ttf"),
+					  url("/Police/Raleway-SemiBoldItalic.ttf"),
+					   url("/Police/Raleway-Thin.ttf"),
+					    url("/Police/Raleway-ThinItalic.ttf"),
+						
+						
+}
+
+
+/* Navigation */
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+	justify-content: flex-end;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    
+    color: #0043fc;
+}
+
+#inscription{
+	
+color: #1e9aff;
+
+}
+/* Section hébergement marseille*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    
+}
+/*.box
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    width: 1200px;
+    list-style-type: none;
+}*/
+.box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+
+/*.carte
+
+{
+    background-color: #f2f2f2dc;
+    display: flex;
+    margin: auto;
+    background-size: cover;
+    max-width: 250px;
+    padding: 15px;
+    justify-content: center;
+    width: 90px;
+	height: 90px;
+}*/
+
+.carte
+{
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    background-color: rgba(255, 255, 255, 0.795);
+    
+   
+    
+}
+
+.photo {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    
+}
+
+/* Section hébergement marseille*/
+/*Footer*/
+footer {
+    max-width: 1350px;
+    padding: 48px 20px 51px 50px;
+    /*background-color: #F2F2F2;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+	margin: auto;
+  padding: 0 2rem;
+ box-sizing: border-box;
+width: 100%;
+
+padding: 5px;
+}
+
+.titre_apropos {
+    /*padding-bottom: 22px;*/
+}
+
+.a_propos {
+    display: flex;
+    flex-direction: column;
+}
+
+.titre_noshebergements {
+    /*padding-bottom: 22px;*/
+}
+
+.nos_hebergements {
+    display: flex;
+    flex-direction: column;
+}
+
+.titre_assistance {
+     /*padding-bottom: 22px;*/
+}
+
+.assistance {
+    display: flex;
+    flex-direction: column;
+}
+
+footer h4 {
+    font-weight: normal;
+}
+
+footer h2 {
+    font-size: large;
+}
+
