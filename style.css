@@ -22,6 +22,8 @@ a {
 body {
   font-family: "Raleway-Regular", "Arial", "Verdana", "Serif";
   width: auto;
+  /*padding-left: 20px;
+  padding-right: 20px;*/
 }
 #inscription_presp,
 #menu_presp {
