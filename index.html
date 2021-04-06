@@ -15,19 +15,17 @@
       <div id="menu_p">
         <nav>
           <ul>
-            <li><a href="#hebergement">Hébergements</a></li>
-            <li><a href="#Activites-marseille">Activités</a></li>
-
+            <div id="menu-respo">
+              <li>
+                <a id="hebergementmenu" href="#hebergement">Hébergements</a>
+              </li>
+              <li>
+                <a id="activitymenu" href="#Activites-marseille">Activités</a>
+              </li>
+            </div>
             <li><a id="inscription" href="#">S'inscrire</a></li>
           </ul>
         </nav>
-      </div>
-      <div id="inscription_presp">
-        <a id="inscription_menu" href="#">S'inscrire</a>
-      </div>
-      <div id="menu_presp">
-        <a href="#hebergement">Hébergements</a>
-        <a href="#Activites-marseille">Activités </a>
       </div>
     </header>
 
@@ -46,7 +44,12 @@
             id="pseudo"
           />
 
-          <button type="submit" id="submit">Rechercher</button>
+          <button type="submit" id="submit">
+            <p>Rechercher</p>
+          </button>
+          <button class="rechercher_loupe">
+            <span><i class="fas fa-search"></i></span>
+          </button>
           <br />
         </p>
       </form>
@@ -55,29 +58,34 @@
       <div class="titrefiltres">
         <p>Filtres</p>
       </div>
+      <div id="econofamilial">
+        <div class="filtrebouton">
+          <div class="icon-filter">
+            <i class="fas fa-money-bill-wave"></i>
+          </div>
 
-      <div class="filtrebouton">
-        <div class="icon-filter">
-          <i class="fas fa-money-bill-wave"></i>
+          <p>Economique</p>
         </div>
-        <p>Economique</p>
-      </div>
-      <div class="filtrebouton">
-        <div class="icon-filter">
-          <i class="fas fa-child"></i>
+        <div class="filtrebouton">
+          <div class="icon-filter">
+            <i class="fas fa-child"></i>
+          </div>
+
+          <p>Familial</p>
         </div>
-        <p>Familial</p>
       </div>
       <div class="filtrebouton">
         <div class="icon-filter">
           <i class="fas fa-heart"></i>
         </div>
+
         <p>Romantique</p>
       </div>
       <div class="filtrebouton">
         <div class="icon-filter">
           <i class="fas fa-dog"></i>
         </div>
+
         <p>Animaux autorisés</p>
       </div>
     </div>
@@ -412,14 +420,12 @@
         <a href="#">
           <h3 class="titre_apropos">A propos</h3>
           <div class="box-footer">
-            <div>
-              <h4>Fonctionnement du site</h4>
-              <br />
-            </div>
-            <div>
-              <h4>Conditions générales de vente</h4>
-              <br />
-            </div>
+            <h4>Fonctionnement du site</h4>
+            <br />
+
+            <h4>Conditions générales de vente</h4>
+            <br />
+
             <div>
               <h4>Données et confidentialité</h4>
             </div>
@@ -430,13 +436,10 @@
         <a href="#">
           <h3 class="titre_noshebergements">Nos hébergements</h3>
           <div class="box-footer">
-            <div>
-              <h4>Charte qualité</h4>
-              <br />
-            </div>
-            <div>
-              <h4>Soumettre votre hôtel</h4>
-            </div>
+            <h4>Charte qualité</h4>
+            <br />
+
+            <h4>Soumettre votre hôtel</h4>
           </div>
         </a>
       </div>
@@ -444,13 +447,10 @@
         <a href="#">
           <h3 class="titre_assistance">Assistance</h3>
           <div class="box-footer">
-            <div>
-              <h4>Centre d'aide</h4>
-              <br />
-            </div>
-            <div>
-              <h4>Nous contacter</h4>
-            </div>
+            <h4>Centre d'aide</h4>
+            <br />
+
+            <h4>Nous contacter</h4>
           </div>
         </a>
       </div>
