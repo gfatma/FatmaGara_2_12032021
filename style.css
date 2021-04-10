@@ -16,12 +16,18 @@
     url("/Police/Raleway-SemiBoldItalic.ttf"), url("/Police/Raleway-Thin.ttf"),
     url("/Police/Raleway-ThinItalic.ttf");
 }
+/*nav span{
+		position: absolute;
+		top: 40px;
+		right: 20px;
+	}*/
+
 a {
   text-decoration: none;
 }
 body {
   font-family: "Raleway-Regular", "Arial", "Verdana", "Serif";
-  width: auto;
+ 
   /*padding-left: 20px;
   padding-right: 20px;*/
 }
@@ -35,9 +41,15 @@ body {
   justify-content: space-between;
 }
 
-#logo img {
-  width: 50px;
-  height: 50px;
+#logo {
+  width: 120px;
+  height: 120px;
+}
+.titrefiltres{
+	font-size: 20px;
+}
+#header_2{
+  display:none;
 }
 #secfilter {
   display: flex;
@@ -110,28 +122,40 @@ body {
 .nbrlogements i {
   padding-top: 10px;
 }
+header {
+  display: flex;
+  flex-direction: row;
+ justify-content: space-between;
+  margin: 10px 20px 10px 20px;
+}
+#menu_p{
+  display: flex;
+  /*flex-direction: row;*/
+  align-items: center;
+  /*justify-content: space-between;*/
+}
 /* Navigation */
 nav ul {
   list-style-type: none;
   display: flex;
-  justify-content: flex-end;
+  /*justify-content: flex-end;*/
 }
 
 nav li {
   margin-right: 15px;
 }
-#menu-respo {
+/*#menu-respo {
   bottom: 0;
 
   width: 100%;
 
   display: flex;
   flex-direction: row;
-}
+}*/
 nav a {
-  font-size: 1.3em;
+  font-size: 1em;
   color: #181818;
-  padding-bottom: 3px;
+ /* padding-bottom: 3px;*/
   text-decoration: none;
 }
 
@@ -139,15 +163,24 @@ nav a:hover {
   color: #70a8fd;
   border-top: 3px solid #0065fc;
 }
-#inscription {
-  color: #7060fd;
-}
-#inscription_menu {
-  color: #609ffd;
-}
-#menu_p li {
+/*#deuxième_moyetie {
+  color: #0065fcd2;
   font-size: 0.6em;
+  border-top: 3px solid #0065fc;
+  
+}*/
+.deuxime_moitie{
+  margin-top: 1px;
 }
+#inscription {
+  color: #609ffd;
+  font-size: 1em;
+  border-top: 3px solid #0065fc;
+ 
+}
+/*#menu_p li {
+  font-size: 0.6em;
+}*/
 input {
   border: none;
   width: 220px;
@@ -311,12 +344,7 @@ button {
 }
 /*section activité a marseille*/
 /*header*/
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 10px 20px 10px 20px;
-}
+
 h1,
 .titremarseille {
   font-size: 0.9em;
@@ -1996,26 +2024,53 @@ footer h2 {
 @media all and (max-width: 1000px){
   /* PARAMETRES GENERAUX */
 body{
-  width: auto;
+ /* width: auto;*/
   margin: 0px;
   padding: 0px;
+  font-size: 20px;
   
 }
   p {
     /*font-family: 'Raleway-Semibold';*/
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
   }
   h1 {
     /*font-family: 'Raleway-Semibold';*/
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
   }
   .titremarseille {
     /*font-family: 'Raleway-Semibold';*/
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
   }
+  header .premiere_moyetie{
+    display:none;
+	 font-size: 30px;
+  }
+  #header_2{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between; 
+   font-size: 30px;
+   margin-top:50px;
+  }
+  .premiere, .deuxieme{
+    font-size: 1em;
+    color: #050505;
+   /* padding-bottom: 3px;*/
+    text-decoration: none; 
+  } a.hebergementmenu, a.activitymenu 
+  { color: #1e4d94;
+    
+  padding-top: 200px;
+font-size:30px;}
+  
+  a.hebergementmenu hover a.activitymenu hover
+  { color: #1e4d94;
+    border-bottom: 3px solid #0065fc;
+ }
   .rechercher_loupe {
     display: inline;
     width: 8%;
@@ -2034,17 +2089,20 @@ body{
   /*.titrefiltres {
     align-self: flex-start;
     margin: 0px 0px 20px 30px;
-  }*/
+	
+  
+  
   #titrep p {
     font-size: 30px;
+	margin-left: 0px;
   }
   .titremarseillep {
     /*font-family: 'Raleway-Semibold';*/
-    font-size: 30px;
+  /*  font-size: 20px;
     font-weight: bold;
-  }
+  }*/
   h3 {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   /* HEADER */
@@ -2052,29 +2110,46 @@ body{
   header,
   #titrep,
   #bloc-recherche {
-    margin: 0;
+    margin-left: 0px;
     width: 100%;
-    padding-left: 5px;
+    /*padding-left: 5px;*/
+  } 
+  #titrepe {
+    padding-top: 0;
+    width: 100%;
+    /*padding-left: 5px;*/
   }
-
-  header {
+ #titrep h1 {
+	  font-size: 35px;
+    margin-left: 0px;
+	padding-left: 0px;
+    width: 100%;
+    /*padding-left: 5px;*/
+  }
+  #titrep p {
+	  font-size: 30px;
+	  padding-left: 30px;
+  
+    /*padding-left: 5px;*/
+  }
+  /*header {
     display: grid;
     padding-top: 5px;
-  }
-
+  }*/
+#inscription{font-size: 30px;}
   nav {
     margin-right: 0;
   }
 
   /* HEADER MENU */
 
-  #inscription {
+  /*#inscription {
     /**position: ABSOLUTE;*/
-    margin-bottom: 0px;
-    top: 29px;
+    /*margin-bottom: 0px;*/
+  /*  top: 29px;
     right: 30px;
    
-  }
+  }*/
 
   nav {
     display: flex;
@@ -2091,7 +2166,7 @@ body{
 
   header ul li {
     margin-left: 0;
-    padding: 10px 46px 5px 11px;
+   /* padding: 10px 46px 5px 11px;*/
   }
 
   header ul li a:hover {
@@ -2121,10 +2196,14 @@ body{
   #secfilter {
     display: flex;
     flex-direction: column;
+	flex-wrap: wrap;
+	margin-left:0px;
+	padding-left:0px;
+	
   }
 
   #secfilter p {
-    margin-bottom: 10px;
+   /* margin-bottom: 10px;*/
   }
 
   /*.filtrebouton {
@@ -2138,12 +2217,12 @@ body{
     height: 200px;
     font-size: 40px;
   }
-  .filtrebouton {
+  /*.filtrebouton {
     box-sizing: content-box;
-  }
+  }*/
   .titrefiltres {
     align-self: flex-start;
-    margin: 0px 0px 20px 30px;
+    /*margin: 0px 0px 20px 30px;*/
   }
   #box-hebergements {
     display: flex;
@@ -2158,7 +2237,7 @@ body{
 
     background-color: white;
     order: 2;
-    width: 100%;
+    width: 90%;
     margin: 0%;
     padding: 0;
   }
@@ -2169,20 +2248,20 @@ body{
   }
 
   .carte {
-    width: 90%;
-    height: 350px;
-    font-size: 14px;
+    width: 100%;
+    height: 450px;
+    font-size: 25px;
   }
 
   .image1 {
-    width: 90%;
+    width: 70%;
     height: 350px;
     /* padding: 5px;
     margin: 8px;*/
-    font-size: 14px;
+    
   }
   .photo1 {
-    width: 60%;
+    width: 80%;
     height: 350px;
   }
   /* PARAMETRES HEBERGEMENTS POPULAIRES */
@@ -2224,11 +2303,13 @@ body{
     width: 90%;
     height: 200px;
   }
-  .photo {
+  /*.photo {
     width: 800px;
     height: 200px;
+  }*/
+  .afficher_plus{
+	  font-size:40px;
   }
-
   .Activite {
     margin-bottom: 30%;
     height: 70px;
@@ -2266,7 +2347,7 @@ body{
   }
 }
 /* RESPONSIVE TABLETTE */
-@media all and (min-width: 768px)and (max-width: 1024px){
+@media all and (min-width: 813px)and (max-width: 1024px){
 /* TABLETTE */ 
   /* TEXTE DU HEADER */
   body{
