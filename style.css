@@ -260,7 +260,7 @@ button {
   -moz-border-radius: 10px 10px 0 0;
   -webkit-border-radius: 10px 10px 0 0;
   border-radius: 10px 10px 0 0;
-  object-fit: cover;
+ 
   width: 200px;
   height: 100px;
 }
@@ -279,16 +279,16 @@ button {
   width: 200px;
   height: 300px;
 }
-.titremarseille {
-  font-size: 0.9em;
+h2 {
+  font-size: 1em;
   margin-left: 25px;
 }
-.titremarseillep {
+h1 p {
   font-size: 0.9em;
 }
 
 h1 {
-  font-size: 1em;
+  font-size: 1.3em;
 }
 #titrep p {
   font-size: 0.8em;
@@ -318,7 +318,7 @@ h1 {
   -moz-border-radius: 10px 10px 0 0;
   -webkit-border-radius: 10px 10px 0 0;
   border-radius: 10px 10px 0 0;
-  object-fit: cover;
+  
   width: 248px;
   height: 126px;
 }
@@ -367,7 +367,7 @@ h1 {
   -moz-border-radius: 10px 10px 0 0;
   -webkit-border-radius: 10px 10px 0 0;
   border-radius: 10px 10px 0 0;
-  object-fit: cover;
+ 
   width: 122px;
   height: 144px;
 }
@@ -488,15 +488,15 @@ footer h2 {
     background-color: white;
   }
   p {
-    font-size: 20px;
+    font-size:  0.8em;
     font-weight: bold;
   }
   h1 {
    font-size: 3em;
     font-weight: bold;
   }
-  .titremarseille,
-  .titremarseillep {
+  h2,
+  h2 p {
     font-size: 2em;
     font-weight: bold;
   }
@@ -560,6 +560,8 @@ footer h2 {
   .icon-filter {
     font-size: 35px;
   }
+  .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{ padding-top: 20px;}
+ 
   #secfilter :hover {
     color: #0097fc; 
   }
@@ -583,17 +585,14 @@ footer h2 {
     width: 100%;
     padding-left: 30px;
   }
-  #titrep p {
-    padding-left: 30px;
-}
+
 
   #titrep p {
+	   padding-left: 30px;
     font-size: 2em;
     color: #696969;
   }
-  #titrep h1 {
-    font-size: 3em;
-  }
+  
   .nbrlogements {
     font-size: 2em;
   }
@@ -601,9 +600,6 @@ footer h2 {
   #inscription {
     font-size: 250%;
     padding-right: 20px;
-  }
-  nav {
-    margin-right: 0;
   }
 
 
@@ -614,6 +610,7 @@ footer h2 {
     align-items: center;
     width: 100%;
     margin-top: 2px;
+	    margin-right: 0;
   }
 
   nav ul {
@@ -696,7 +693,7 @@ footer h2 {
     flex-direction: column;
     font-size: 20px;
   }
-  #Activites-marseille .titremarseille {
+  #Activites-marseille .h2 {
     font-size: 2em;
   }
 
@@ -859,14 +856,20 @@ footer h2 {
   }
 
   h1 {
-    font-size: 1.5em;
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.7em;
   }
   .afficher_plus p {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
+  h3{   font-size: 1em;
+  }
+  
   .titre,
   .prix,
-  h3,
+  
   p {
     font-size: 1em;
   }
@@ -889,7 +892,7 @@ footer h2 {
     font-size: 1.3em;
   }
   #secfilter p {
-    font-size: 1.3em;
+    font-size: 1em;
   }
   #secfilter :hover {
     color: #0097fc; 
@@ -907,14 +910,10 @@ footer h2 {
     margin-right: 10px;
     margin-left: 10px;
   }
-  #titrep h1 {
-    font-size: 2.2em;
-  }
-  #titrep p {
-    font-size: 2em;
-  }
+
   #titrep p {
     margin-left: 10px;
+	font-size: 1.3em;
   }
   .nbrlogements {
     font-size: 2em;
@@ -977,10 +976,9 @@ footer h2 {
     display: flex;
     flex-direction: column;
   }
-  .titremarseille,
-  .titremarseillep,
+  
   .fa-chart-line {
-    font-size: 2em;
+    font-size: 2.5em;
   }
   .carteactiv3,
   .carteactiv6 {
