@@ -23,6 +23,9 @@ a {
 }
 body {
   font-family: "Raleway-Regular", "Arial", "Verdana", "Serif";
+  width: fit-content;
+  max-width: 1440px;
+  margin: auto;
 }
 #inscription_presp,
 #menu_presp {
