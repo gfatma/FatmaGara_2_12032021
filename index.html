@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <title>Reservia</title>
     <script
@@ -11,37 +12,25 @@
   </head>
   <body>
     <header>
-	   <div id="header_1">
-      <img src="images/logo/Reservia.svg" id="logo" alt="Logo de Reservia" />
-      <div id="menu_p">
-        <div class="premiere_moyetie">
-          <nav>
-            <ul>
-              <li>
-                <a class="hebergementmenu" href="#hebergement">Hébergements</a>
-              </li>
-              <li>
-                <a class="activitymenu" href="#Activites-marseille"
-                  >Activités</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="deuxime_moitie">
-          <a id="inscription" href="#">S'inscrire</a>
-        </div>
-      </div>
- </div>
-    <div id="header_2">
-      <div class="premiere_moyetie">
-        <a class="hebergementmenu" href="#hebergement">Hébergements</a>
-      </div>
-      <div class="deuxieme_moyetie">
-        <a class="activitymenu" href="#Activites-marseille">Activités</a>
-      </div>
-    </div>
-    
+	   <div class="conteneur_entete">
+                <div id="logo">
+                    <img class="logo" src="images/logo/Reservia.svg" alt="Reservia">
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="#Hebergements">Hébergements</a>
+                        </li>
+
+                        <li>
+                            <a href="#Activites">Activités</a>
+                        </li>
+                    </ul>
+                <div class="inscrire">
+                    <a href="#">S'inscrire</a>
+                </div>
+                </nav>
+            </div>
    </header>
     <section id="bloc-recherche">
       <div id="titrep">
@@ -50,7 +39,8 @@
       </div>
       <form method="post" action="#">
         <p>
-          <i class="fas fa-map-marker-alt"></i>
+          <span class="recherche_icon">
+          <i class="fas fa-map-marker-alt"></i></span>
           <input
             type="text"
             name="pseudo"
@@ -59,49 +49,42 @@
 
           <button type="submit" id="submit">Rechercher</button>
           <button class="rechercher_loupe">
-            <span><i class="fas fa-search"></i></span>
+            <span><i class="fas fa-search loupe"></i></span>
           </button>
           <br />
         </p>
       </form>
     </section>
-    <div id="secfilter">
-      <div class="titrefiltres">
-        <p>Filtres</p>
+   
+    <div class="Filtres">
+      <h2 class="Titre_filtres">Filtres</h2>
+      <div class="rechercher_filtre">
+        <div class="rechercher_filtreicon">
+          <i class="fas fa-money-bill-wave rechercher_filtredoubleicon"></i>
+        </div>
+        <span class="rechercher_filtretitre">Économique</span>
       </div>
-      <div class="econofamilial">
-        <div class="filtrebouton eco">
-          <div class="icon-filter">
-            <i class="fas fa-money-bill-wave icon-filter"></i>
-          </div>
-
-          <p>Economique</p>
+      <div class="rechercher_filtre fam">
+        <div class="rechercher_filtreicon">
+          <i class="fas fa-child rechercher_filtredoubleicon"></i>
         </div>
-        <div class="filtrebouton fam">
-          <div class="icon-filter">
-            <i class="fas fa-child icon-filter"></i>
-          </div>
-
-          <p>Familial</p>
-        </div>
+        <span class="rechercher_filtretitre ">Familial</span>
       </div>
-      <div class="filtrebouton rom">
-        <div class="icon-filter">
-          <i class="fas fa-heart icon-filter"></i>
+      <div class="rechercher_filtre">
+        <div class="rechercher_filtreicon">
+          <i class="fas fa-heart rechercher_filtredoubleicon"></i>
         </div>
-
-        <p>Romantique</p>
+        <span class="rechercher_filtretitre">Romantique</span>
       </div>
-      <div class="filtrebouton anim">
-        <div class="icon-filter">
-          <i class="fas fa-dog icon-filter"></i>
+      <div class="rechercher_filtre anim">
+        <div class="rechercher_filtreicon">
+          <i class="fas fa-dog rechercher_filtredoubleicon"></i>
         </div>
-
-        <p>Animaux autorisés</p>
+        <span class="rechercher_filtretitre">Animaux autorisés</span>
       </div>
     </div>
     <div class="nbrlogements">
-      <i class="fas fa-info-circle"></i>
+      <i class="fas fa-info searchResultWrapiconIcon"></i>
       <p>Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
     <div id="box-hebergements">
@@ -295,7 +278,7 @@
 
             <div class="contenu">
               <div class="titre">
-                <h3>Au coeur de l'eau</h3>
+                <h3>Au coeur de l'eau </br> Chambres d'hôtes</h3>
               </div>
               <div class="prix">
                 <p>Nuit à partir de<strong>71€</strong></p>
@@ -312,17 +295,17 @@
         <a href="#">
           <div class="image1">
             <img
-              class="photo1 img3"
+              class="photo1"
               src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
               alt="Hôtel tout Bleu et Blanc"
             />
 
-            <div class="contenu">
+             <div class="contenu">
               <div class="titre">
                 <h3>Hôtel tout Bleu et Blanc</h3>
               </div>
               <div class="prix">
-                <p>Nuit à partir de<strong> 68€ </strong></p>
+                <p>Nuit à partir de<strong>68€</strong></p>
               </div>
               <div class="note">
                 <i class="fas fa-star"></i><i class="fas fa-star"> </i
