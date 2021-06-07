@@ -24,7 +24,7 @@ a {
 body {
   font-family: "Raleway","Raleway-Regular","Sans-Serif", "Arial", "Verdana", "Serif";
   width: fit-content;
-  max-width: 1400px;
+  max-width: 1366px;
   margin: auto;
 }
 h1,
@@ -59,7 +59,7 @@ p {
  
   padding: 0 2em;
   height: 2.7em;
-  margin-right: 50rem;
+
 }
 
  .conteneur_entete {
@@ -70,6 +70,7 @@ p {
 }
 .menu_nav {
     display: flex;
+
  
 }
 
@@ -358,21 +359,21 @@ margin-bottom:0px;}
 }
 .carteactiv1,.carteactiv4{
   height: 26rem;
-  width: 19rem;
+  width: 18rem;
   object-fit: cover;}
 .photoactiv1,.photoactiv4{
   height: 23rem;
-  width: 19rem;
+  width: 18rem;
   object-fit: cover;}
   
 .carteactiv3{
 	height: 11rem;
-  width: 19rem;
+  width: 18rem;
   }
 
 .carteactiv5,.carteactiv6{
 height: 11rem;
-  width: 19rem;
+  width: 18rem;
  
 }
 .carteactiv6{
@@ -381,11 +382,11 @@ margin-top:60px;
 }
 
 .carteactiv2{  height: 11rem;
-  width: 19rem;}
+  width: 18rem;}
   
 .photoactiv5, .photoactiv6{
   height: 8rem;
-  width: 19rem;
+  width: 18rem;
   object-fit: cover;
 
   border: 1px solid white;
@@ -393,7 +394,7 @@ margin-top:60px;
 }
 .photoactiv2, .photoactiv3{
   height: 8rem;
-  width: 19rem;
+  width: 18rem;
   object-fit: cover;
 
   border: 1px solid white;
@@ -591,7 +592,7 @@ width: 9.35rem;
   justify-content: space-between;
   background-color: rgb(246, 245, 243);
   margin-left: 10px;
-  margin-right:0;
+  margin-right: 25px;
   border-radius: 1rem 1rem 1rem 1rem;
 }
 
@@ -614,6 +615,7 @@ footer {
  margin-left: 0px;
   margin-right: 0px;
   padding-left: 10px;
+  padding-right: 250px;
  
   box-sizing: border-box;
   width: 100%;
@@ -698,14 +700,15 @@ footer h2 {
 }
 
 #loupe{display: none;}
-@media (min-width: 300px) and (max-width: 767px) /* SMARTPHONES */ {
-
+/*@media(min-width: 300px) and (max-width: 767px) /* SMARTPHONES  {*/
+  @media all  and (max-width: 767px) /* SMARTPHONES */ {
 body{
 	margin-left:3px;
-margin-right:2px;
+  margin-right:2px;
 	width:auto;
-}
-
+ 
+  }
+  
 	 h2 {
     font-size: 20px;
     font-weight: bold;
@@ -719,8 +722,9 @@ margin-right:2px;
 
   header {
     margin: 0;
-    width: 100%;
+ 
     padding-left: 5px;
+  flex-direction: column;
   }
 
   .conteneur_entete {
@@ -742,7 +746,7 @@ margin-right:2px;
   nav {
     display: flex;
     
-    align-items: center;
+    
     width: 100%;
     margin-top: 2px;
   }
@@ -786,6 +790,7 @@ button {
 
   .Filtres {
     display: grid;
+
   }
 
   .Titre_filtres {
@@ -796,20 +801,25 @@ button {
     width: 14%;
     margin-bottom: 10px;
   }
-.eco{width: 50%;}
-.rom{width: 50%}
+.eco{width: 50%;
+  padding-right:12px;}
+.rom{width: 50%;
+  padding-right:12px;}
   .fam {
     position: absolute;
     margin: 30px 0 0 55%;
-	padding-right:15px;
+    margin-left: 216px;
+	padding-right:12px;
     width: 35%;
   }
 .anim {
     
     width: 70%;
+    padding-right:10px;
   }
   footer{display: flex;
-  flex-direction: column;}
+  flex-direction: column;
+   padding-right: 0;}
   #box-hebergements{display:flex;
   flex-direction: column-reverse;}
   
@@ -830,7 +840,7 @@ button {
 	width: 100%; 
 	  height: 130px; 
   }
-  .
+ 
   /******paramètres activités***/
   /* PARAMETRES ACTIVITES */
 
@@ -839,7 +849,7 @@ button {
     height: auto;
     margin-bottom: 25px;
     justify-content: normal;
-    -moz-margin-start: -60px;
+    
   }
 
   .carteactiv1,
@@ -849,7 +859,7 @@ button {
   .carteactiv5,
   .carteactiv6 {
     width: 		300px;
-	/*margin-left:20px;*/
+	
 	height:200px;
 	margin-bottom:60px;
   }
@@ -878,7 +888,7 @@ button {
   .Activite {
     margin-bottom: 30%;
     height: 70px;
-    -moz-margin-start: 62px;
+  
   }
 
   .nomactivite {
@@ -886,7 +896,7 @@ button {
     border-radius: 0 0 1.25rem 1.25rem;
     border-color: transparent;
     box-shadow: 0 5px 16px #0000002e;
-    margin-top: -12px;
+   
   }
   aside .titre,
   aside .prix,
