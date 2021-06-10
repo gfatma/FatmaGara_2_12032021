@@ -70,13 +70,13 @@ p {
 }
 .menu_nav {
     display: flex;
-
+margin-left:700px;
  
 }
 
 
 .menu_nav_lien{
-  padding: 2em;
+ padding: 2em;
   font-weight: 500;
   text-align: center;
   transition-duration: 0.1s;
@@ -170,7 +170,7 @@ button {
   border-radius: 0 10px 10px 0;
   height: 50px;
   width: 110px;
-  margin-left: -5px;
+  margin-left: 5px;
   background-color: #0065fc;
   border: none;
   color: rgb(255, 255, 255);
@@ -703,19 +703,19 @@ footer h2 {
 /*@media(min-width: 300px) and (max-width: 767px) /* SMARTPHONES  {*/
   @media all  and (max-width: 767px) /* SMARTPHONES */ {
 body{
-	margin-left:3px;
-  margin-right:2px;
+	/*margin-left:3px;
+  margin-right:2px;*/
 	width:auto;
  
   }
   
 	 h2 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
   }
 
   h3 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   /* HEADER */
@@ -733,7 +733,7 @@ body{
   }
 
   .menu {
-    margin-right: 20px;
+   /* margin-right: 20px;*/
   }
 .logo_img{
 	padding-top:10px;
@@ -754,19 +754,20 @@ body{
  .photo3{width:60%;}
 
   .menu_nav_lien{
-margin-right:70px;
+margin-right:40px;
 
 	font-size:1rem;
 }
-
+.menu_nav{margin-left:0;
+margin-right:0;}
 .menu_nav_lien:hover {
    border-bottom: 2px solid #0065fc;
     border-top: none;
   
 }
  #pseudo{
-	 width:59%;
-	 
+	 width:56%;
+	
 	
  }
  #loupe {
@@ -800,30 +801,36 @@ button {
   .rechercher_filtre {
     width: 14%;
     margin-bottom: 10px;
+	font-size:14px;
   }
-.eco{width: 50%;
-  padding-right:12px;}
-.rom{width: 50%;
-  padding-right:12px;}
+.eco{width: 30%;
+  padding-right:50px;
+  padding-left:0;}
+.rom{width: 30%;
+  padding-right:50px;
+  padding-left:0;}
   .fam {
     position: absolute;
-    margin: 30px 0 0 55%;
-    margin-left: 216px;
-	padding-right:12px;
+    margin: 30px 0 0 40%;
+    margin-left: 180px;
+	padding-right:30px;
+	padding-left:0;
     width: 35%;
   }
 .anim {
     
-    width: 70%;
-    padding-right:10px;
+    width: 60%;
+    padding-right:50px;
+	padding-left:0;
   }
   footer{display: flex;
   flex-direction: column;
-   padding-right: 0;}
+   padding-right: 0;
+   }
   #box-hebergements{display:flex;
   flex-direction: column-reverse;}
-  
-  
+  footer h3{font-size: 16px;}
+  footer h4{font-size: 15px;}
   /* hébergements*/
   #hebergement{display:flex;
   flex-direction: column;
@@ -834,8 +841,10 @@ button {
   }
   .boxpopulaire, .boxtitrepopulaire, #titre_aside, .fa-chart-line{ background-color: white;}
   .carte{
-	 width: 		90%; 
+	  width:90%;  
+	  font-size: 20px;
   }
+  
   .photo{
 	width: 100%; 
 	  height: 130px; 
@@ -862,6 +871,7 @@ button {
 	
 	height:200px;
 	margin-bottom:60px;
+	font-size: 25px;
   }
 .carteactiv1 .titre,
   .carteactiv2 .titre,
@@ -871,6 +881,7 @@ button {
   .carteactiv6 .titre{
     
 	padding-top:150px;
+	
   }
   .photoactiv1,
   .photoactiv2,
@@ -908,9 +919,9 @@ button {
 }
  /* 
 .hebergement h2, .boxpopulaire h2,.Activites-marseille h2{font-size: 1.5rem;}*/
-}
+}/*
 /* RESPONSIVE TABLETTE */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
   /* @media screen and (max-device-width:1023px) {
 /* TABLETTE */
   /* TEXTE DU HEADER */
@@ -937,13 +948,11 @@ button {
   
 }
 .menu_nav{
-	transform: translateX(-250%);
+	
+	margin-left: 50px;
     
 }
-.inscrire{transform: translateX(-250%);
-position: fixed;
-margin-right: 200px;
-padding-left: 0;}
+
   #Activites-marseille-respo {
     margin-left: 0px;
     margin-right: 5px;
@@ -1040,10 +1049,10 @@ padding-left: 0;}
     width: 100%;
     position: relative;
     left: 50%;
-    transform: translateX(-50%); /*centré dans l'élément parent*/
+   transform: translateX(-50%); /*centré dans l'élément parent*/
     margin-bottom: 20px;
     border-radius: 0;
-	margin-left:10px;
+	margin-left:0;
   }
 
 .fa-chart-line:before {
@@ -1174,8 +1183,8 @@ padding-left: 0;}
   /* PARAMETRES HEBERGEMENTS POPULAIRES */
   
   .carte {
-    width: 240x;
-    height: 300px;
+    width: 180x;
+    height: 240px;
     font-size: 25px;
   }
 
@@ -1183,7 +1192,304 @@ padding-left: 0;}
 
   .photo {
    width: 100%;
-    height: 160px;
+    height: 120px;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(246, 245, 243);
+  }
+  .nos_hebergements,
+  .assistance {
+    margin-left: 14px;
+  }
+
+  footer h3,
+  footer h4 {
+    font-size: 2em;
+  }
+}
+@media screen and  (device-width: 1024px) {
+  /* @media screen and (max-device-width:1023px) {
+/* TABLETTE */
+  /* TEXTE DU HEADER */
+ 
+ body {
+    width: auto;
+  }
+  .boxpopulaire,
+  
+  .carte,
+  .image1 {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .box-hebergements,
+  .boxpopulaire,
+  #hebergement,
+  .footer {
+    background-color: white;
+  }
+  #pseudo {
+  
+  height:20px;
+  
+}
+.menu_nav{
+	
+	margin-left: 50px;
+    
+}
+
+  #Activites-marseille-respo {
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+  #bloc-recherche {
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+
+
+
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.7em;
+  }
+  .afficher_plus p {
+    font-size: 1.5em;
+  }
+  h3{   font-size: 1em;
+  }
+  
+  .titre,
+  .prix,
+  
+  p {
+    font-size: 1em;
+  }
+  .boxpopulaire .titre,
+  .boxpopulaire .prix {
+    font-size: 1.5em;
+  }
+   .boxpopulaire .fa-star {
+       font-size: 1.5em;
+  }
+  .boxtitrepopulaire{
+	  background-color: white;
+  }
+  .contenuactiv .titre {
+    font-size: 1.5em;
+  }
+  .rechercher_loupe {
+    display: none;
+ 
+  }
+ 
+  /* FORMULAIRE DE RECHERCHE */
+  #box-hebergements {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+
+  #titrep p {
+    margin-left: 10px;
+	font-size: 1.3em;
+  }
+  .nbrlogements {
+    font-size: 2em;
+  }
+  .icon-filter {
+    font-size: 1em;
+	margin-top:2px;
+  }
+ .fa-chart-line {
+ 
+  font-size: 2em;
+}
+
+  .fa-info-circle{
+	  margin-top: 12px;
+  }
+
+  
+  #pseudo {
+    width: 300px;
+    height: 60px;
+    font-size: 1em;
+  }
+
+
+
+  .info {
+    align-items: CENTER;
+    position: relative;
+  }
+
+  /* PARAMETRES HEBERGEMENTS */
+
+  #hebergement {
+    width: 100%;
+    position: relative;
+    left: 50%;
+   transform: translateX(-50%); /*centré dans l'élément parent*/
+    margin-bottom: 20px;
+    border-radius: 0;
+	margin-left:80px;
+  }
+
+.fa-chart-line:before {
+	font-size:1.5rem;
+}
+  /* HEBERGEMENTS ET POPULAIRES */
+ #Activites-marseille {
+    display: none;
+  }
+
+ #Activites-marseille-respo {
+    display: block;
+	
+  }
+  #Activites-marseille-respo .carteactiv {
+    display: flex;
+    flex-direction: row;
+   
+  }
+
+  #Activites-marseille-respo .box {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .fa-chart-line {
+    font-size: 2.5em;
+  }
+ .image1 {
+    width: 70%;
+    height: 200px;
+	margin-left:90px;
+   
+  }
+
+  .photo1 {
+    width: 50%;
+    height: 180px;
+ border-radius: 2rem 0 0 2rem;
+  }
+
+ .carteactiv1,.carteactiv2,.carteactiv3,.carteactiv4,.carteactiv5,.carteactiv6{
+	width:350px;
+	height:350px;}
+ .photoactiv1,
+  .photoactiv2,
+  .photoactiv3,
+  .photoactiv4,
+  .photoactiv5,
+  .photoactiv6 {
+    width: 300px;
+  height: 300px;}
+.carteactiv1 {
+    
+
+	width: 300px;
+    height: 350px;
+	position: relative;
+	margin-left:80px;
+  }
+  .carteactiv1 .titre{
+    padding-top: 290px;
+.  }
+  .carteactiv2 {
+	
+	width: 300px;
+    height: 350px;
+	position: relative;
+	margin-top:81px;
+	margin-left:80px;
+	 }
+	 .carteactiv2 .titre{
+    padding-top: 290px;
+  }
+  .carteactiv3 {
+	width: 300px;
+    height: 350px;
+	position: relative;
+	margin-top:81px;
+	margin-right:40px;
+  }
+  .carteactiv3 .titre{
+   padding-top: 290px;
+  }
+  .carteactiv4 {
+   
+	width: 300px;
+    height: 350px;
+	position: relative;
+	margin-left:300px;
+  }
+  .carteactiv4 .titre{
+  padding-top: 271px;
+ }
+  .carteactiv5 {
+   
+	width: 300px;
+    height: 350px;
+	position: relative;
+	margin-top:80px;
+	margin-left:80px;
+	}
+	.carteactiv5 .titre{
+    padding-top: 290px;
+  }
+  .carteactiv6 {
+	width: 300px;
+    height: 350px;
+	position: relative;
+	margin-top:80px;
+	margin-right:40px;
+ }
+ .carteactiv6 .titre{
+   padding-top: 290px;
+}
+  .photoactiv1,
+  .photoactiv2,
+  .photoactiv3,
+  .photoactiv4,
+  .photoactiv5,
+  .photoactiv6 {
+    width: 300px;
+    height: 300px;
+	justify-content:center;
+   
+ }
+
+  /* PARAMETRES HEBERGEMENTS POPULAIRES */
+  
+  .carte {
+    width: 180x;
+    height: 240px;
+    font-size: 25px;
+  }
+
+ 
+
+  .photo {
+   width: 100%;
+    height: 120px;
   }
 
   footer {
