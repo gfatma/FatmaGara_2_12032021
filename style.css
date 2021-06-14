@@ -931,9 +931,13 @@ button {
   }
   .boxpopulaire,
   
-  .carte,
+
   .image1 {
     margin-left: 5px;
+    margin-right: 5px;
+  }
+  .carte {
+    margin-left: 40px;
     margin-right: 5px;
   }
   .box-hebergements,
@@ -952,7 +956,8 @@ button {
 	margin-left: 50px;
     
 }
-
+.inscrire{
+  right: 80px;}
   #Activites-marseille-respo {
     margin-left: 0px;
     margin-right: 5px;
@@ -1013,8 +1018,8 @@ button {
     margin-left: 10px;
 	font-size: 1.3em;
   }
-  .nbrlogements {
-    font-size: 2em;
+  .nbrlogements p{
+    font-size: 1.2em;
   }
   .icon-filter {
     font-size: 1em;
@@ -1043,18 +1048,7 @@ button {
     position: relative;
   }
 
-  /* PARAMETRES HEBERGEMENTS */
-
-  #hebergement {
-    width: 100%;
-    position: relative;
-    left: 50%;
-   transform: translateX(-50%); /*centré dans l'élément parent*/
-    margin-bottom: 20px;
-    border-radius: 0;
-	margin-left:0;
-  }
-
+ 
 .fa-chart-line:before {
 	font-size:1.5rem;
 }
@@ -1082,15 +1076,15 @@ button {
     font-size: 2.5em;
   }
  .image1 {
-    width: 70%;
-    height: 200px;
+    width: 80%;
+    height: 300px;
 	margin-left:90px;
    
   }
 
   .photo1 {
-    width: 50%;
-    height: 180px;
+    width: 60%;
+    height: 280px;
  border-radius: 2rem 0 0 2rem;
   }
 
@@ -1115,7 +1109,7 @@ button {
   }
   .carteactiv1 .titre{
     padding-top: 290px;
-.  }
+ }
   .carteactiv2 {
 	
 	width: 300px;
@@ -1180,21 +1174,42 @@ button {
    
  }
 
-  /* PARAMETRES HEBERGEMENTS POPULAIRES */
-  
-  .carte {
-    width: 180x;
-    height: 240px;
-    font-size: 25px;
-  }
-
  
-
-  .photo {
-   width: 100%;
-    height: 120px;
+  #hebergement{
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 10px;
   }
-
+    .carte123, .carte456{
+      display: flex;
+      flex-direction: column;
+    }
+    .boxpopulaire, .boxtitrepopulaire, #titre_aside, .fa-chart-line{ 
+      background-color: white;
+    }
+    .carte{
+      width:90%;  
+      height: 300px; 
+      font-size: 20px;
+    }
+    .carte p{
+     
+      font-size: 24px;
+    }
+    .carte h3{
+     
+      font-size: 26px;
+    }
+    .carte .note{
+     
+      font-size: 26px;
+    }
+    .photo{
+    width: 100%; 
+      height: 170px; 
+    }
+   
   footer {
     display: flex;
     flex-wrap: wrap;
@@ -1401,7 +1416,8 @@ button {
   .photoactiv5,
   .photoactiv6 {
     width: 300px;
-  height: 300px;}
+  height: 300px;
+}
 .carteactiv1 {
     
 
@@ -1412,7 +1428,7 @@ button {
   }
   .carteactiv1 .titre{
     padding-top: 290px;
-.  }
+}
   .carteactiv2 {
 	
 	width: 300px;
@@ -1480,7 +1496,7 @@ button {
   /* PARAMETRES HEBERGEMENTS POPULAIRES */
   
   .carte {
-    width: 180x;
+    width: 180px;
     height: 240px;
     font-size: 25px;
   }
